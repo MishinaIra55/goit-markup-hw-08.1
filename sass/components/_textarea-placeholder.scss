@@ -1,0 +1,6 @@
+/* меняю style для placeholder */
+.modal-form-input-textarea::placeholder {
+	line-height: 1.14;
+	letter-spacing: 0.01em;
+	color: rgba(117, 117, 117, 0.5);
+}

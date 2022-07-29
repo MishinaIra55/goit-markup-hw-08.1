@@ -1,0 +1,7 @@
+@mixin line-header {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+@mixin line-after {
+   border-bottom: 4px solid var(--accent-color);
+}

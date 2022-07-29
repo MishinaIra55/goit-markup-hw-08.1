@@ -1,0 +1,161 @@
+/* делаем фон модальному окну */
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0.2);
+
+	opacity: 1;
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal {
+		transform: translate(-50%, -50%) scale(0.9);
+	}
+
+/* скрываем модальное окно */
+.backdrop.is-hidden {
+	opacity: 0;
+	/* visibility: hidden; */
+	pointer-events: none;
+}
+
+/* позиционируем модальное окно по центру backdrop */
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 528px;
+	max-height: 581px;
+	height: 100%;
+
+	background-color: var(--primary-white-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;	
+
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	
+	&__button-close {
+	position: absolute;
+	top: 8px;
+   right: 8px;
+	cursor: pointer;
+
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: var(--primary-white-color);
+	
+}
+	&__icon-close {
+	fill:#000;
+}
+}
+
+
+
+
+
+/* Стилизируем форму модального окна */
+
+
+.modal__form-conect {
+	padding: 40px;
+}
+
+.form__modal-name {
+	display: block;
+
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: var(--title-text-color);
+
+	margin-bottom: 12px;
+}
+.modal__form-label {
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	margin-bottom: 4px
+}
+
+.form__field-modal {
+	display: flex;
+	flex-direction: column;
+
+	margin-bottom: 10px;
+	position: relative;
+
+	
+	&:last-child{
+	margin-bottom:0;
+}
+}
+
+
+.modal__form-input {
+	padding-left: 40px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	outline: none;
+	border-radius: 4px;
+	height: 40px;
+
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+					fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:focus-within,
+	&:focus,
+	&:hover {
+	border-color: var(--accent-color);
+	fill: var(--accent-color);
+}
+}
+
+/* меняем border при фокусе */
+
+
+/*  меняем иконку цвет при focuse */
+
+
+.icon__modal {
+	position: absolute;
+	top: 65%;
+	left: 12px;
+	transform: translateY(-50%);
+
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+					fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.modal__form-input:hover + &,
+.modal__form-input:focus + & {
+	fill: var(--accent-color);
+}
+
+}
+
+
+.modal__icon-close:focus,
+.modal__icon-close:hover {
+ fill: var(--accent-color);
+}
+
+.modal__form-input-textarea {
+	resize:none;
+	height: 120px;
+
+	padding: 12px 16px;
+
+}
+
