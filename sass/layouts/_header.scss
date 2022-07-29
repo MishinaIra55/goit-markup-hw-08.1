@@ -1,6 +1,16 @@
 .header__inner {
-	@extend %flex-centered;
+	display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
+
+@media screen and(min-width: 1200px) {
+	.header__inner {
+	justify-content: center;
+	
+}
+		}
+	
 
 .logo {
 	font-family: "Raleway";
@@ -10,15 +20,21 @@
 	text-decoration: none;
 	color: var(--accent-color);
 
-	margin-right: 93px;
+	
 }
 
 .header__nav {
-	@extend %flex-centered;
+	display: flex;
+   align-items: center;
+   justify-content: space-between;
+	
 }
 
 .logo-accent {
 	color: #000000;
 }
 
+
+
+ 
 
