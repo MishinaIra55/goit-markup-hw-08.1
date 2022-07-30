@@ -2,6 +2,10 @@
 	display: flex;
 	margin-left: 65px;
 	flex-direction: column;
+
+	@media screen and(min-width:480px) {
+		display: none;
+	}
 	
 	& .header__list:not(:last-child) {
 	margin-right: 50px;

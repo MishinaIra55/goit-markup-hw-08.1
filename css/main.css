@@ -16,7 +16,7 @@
   overflow: hidden;
 }
 
-.social__link, .check {
+.check {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -169,6 +169,26 @@ body {
   position: relative;
   padding-left: 29px;
   padding-right: 62px;
+}
+
+.menu__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__button .icon__cross {
+  display: none;
+}
+
+.menu__button.is-open .icon__cross {
+  display: block;
+}
+
+.menu__button.is-open .icon__menu {
+  display: none;
 }
 
 /* styles cards*/
@@ -474,11 +494,6 @@ body {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 1200px) {
-  .header__inner {
-    justify-content: center;
-  }
-}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -502,6 +517,11 @@ body {
   display: flex;
   margin-left: 65px;
   flex-direction: column;
+}
+@media screen and (min-width: 480px) {
+  .header__auth-nav {
+    display: none;
+  }
 }
 .header__auth-nav .header__list:not(:last-child) {
   margin-right: 50px;
@@ -545,6 +565,11 @@ body {
 }
 .header__site-nav {
   display: flex;
+}
+@media screen and (min-width: 480px) {
+  .header__site-nav {
+    display: none;
+  }
 }
 .header__site-nav a:hover, .header__site-nav a:focus {
   color: var(--accent-color);
@@ -716,7 +741,6 @@ body {
 }
 .team__item {
   width: 450px;
-  margin-right: 30px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
 }
@@ -743,6 +767,109 @@ body {
   width: 450px;
 }
 
+.team__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team__link:hover .team__icon, .team__link:focus .team__icon {
+  fill: #ffffff;
+}
+.team__link:hover, .team__link:focus {
+  background-color: var(--accent-color);
+}
+
+.team__item-icon {
+  margin-right: 10px;
+}
+.team__item-icon:last-child {
+  margin-right: 0;
+}
+
+.team__icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team__list-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.team-list {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item img {
+    width: 270px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.client__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients__item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
+}
+
 .clients__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -755,7 +882,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -764,14 +891,10 @@ body {
 .clients__link:hover, .clients__link:hover {
   border: 1px solid var(--accent-color);
 }
-
-.client__item {
-  display: flex;
-  justify-content: center;
-}
-
-.clients__list:not(last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 
 .portfolio__list {
@@ -791,10 +914,15 @@ body {
   padding-bottom: 60px;
 }
 .footer__inner {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__inner {
+    display: flex;
+    align-items: baseline;
+  }
+}
 .adress__list a {
   text-decoration: none;
   font-size: 14px;
@@ -802,6 +930,10 @@ body {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adress {
+  margin-bottom: 60px;
 }
 
 .adress__link:hover,
@@ -828,11 +960,6 @@ body {
 }
 
 /*footer social icon*/
-.social {
-  display: flex;
-  flex-direction: column;
-  margin-left: 70px;
-}
 .social__item {
   margin-right: 10px;
 }
@@ -845,6 +972,13 @@ body {
   color: #ffffff;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .social {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+  }
+}
 
 .social__icon {
   fill: var(--primary-white-color);
@@ -854,6 +988,7 @@ body {
 .social__list {
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .social__item:last-child {
@@ -861,6 +996,9 @@ body {
 }
 
 .social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   width: 44px;
   height: 44px;
@@ -882,7 +1020,6 @@ body {
 .form-field {
   display: flex;
   flex-direction: column;
-  margin-right: 12px;
 }
 
 .form__label {
@@ -896,10 +1033,8 @@ body {
 }
 
 .form__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
-  left: 815px;
-  top: 2787px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
