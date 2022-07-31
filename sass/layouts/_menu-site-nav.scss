@@ -1,10 +1,9 @@
 .header__site-nav {
 	display: flex;
 	
-	@media screen and(min-width:480px) {
-		display: none;
-	}
 	
+	
+
 	& a:hover,
 		& a:focus {
 	color: var(--accent-color);

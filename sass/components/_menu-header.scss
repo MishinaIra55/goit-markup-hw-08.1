@@ -1,0 +1,32 @@
+.menu__button {
+	display: inline-flex;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+.menu__button .icon__cross {
+	display: none;
+}
+
+.menu__button.is-open .icon__cross {
+	display: block;
+}
+
+.menu__button.is-open .icon__menu {
+	display: none;
+}
+
+.menu__container {
+	display: none;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+
+	&.is-open {
+		display: block;
+	}
+}
