@@ -4,8 +4,15 @@
 
 	overflow: hidden;
 }
+.portfolio__foto-overlay {
+	width: 450px;
+	height: 294px;
+}
 
-
+.portfolio__foto-overlay img {
+	width: 450px;
+	height: 294px;
+}
 .portfolio__cards-overlay {
 	position: absolute;
 	top: 0;

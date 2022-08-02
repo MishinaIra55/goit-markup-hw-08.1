@@ -1,9 +1,15 @@
+.header {
+	
+
+	
+}
+
 .header__inner {
 	display: flex;
    align-items: center;
    justify-content: space-between;
 
-	position: relative;
+	height: 60px;
 }
 
 // @media screen and(min-width: 1200px) {
@@ -35,6 +41,7 @@
 .logo-accent {
 	color: #000000;
 }
+
 
 
 

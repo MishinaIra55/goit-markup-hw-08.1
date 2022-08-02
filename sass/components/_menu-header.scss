@@ -1,4 +1,5 @@
-.menu__button {
+ .menu__toggle-open,
+ .menu__toggle-close  {
 	display: inline-flex;
 	margin: 0;
 	padding: 0;
@@ -6,27 +7,81 @@
 	background-color: transparent;
 }
 
-.menu__button .icon__cross {
-	display: none;
+.menu__toggle-icon:hover {
+	cursor: pointer;
+	fill: #2196F3;
 }
 
-.menu__button.is-open .icon__cross {
-	display: block;
-}
-
-.menu__button.is-open .icon__menu {
+@media screen and(min-width: 768px) {
+	.menu__toggle-open{
 	display: none;
 }
+}
 
-.menu__container {
-	display: none;
+.menu {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
 
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-
-	&.is-open {
-		display: block;
+@media  screen and(max-width: 767px) {
+	.menu {
+		display: none;
 	}
+}
+
+/*позионируем мобильное меню поверх*/ 
+.menu__container {
+	background-color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	padding: 32px;
+	z-index: 999;
+	transform: translateX(100%);
+}
+
+.menu__container.is-open {
+	transform: translateX(0);
+}
+
+/* иконка закрытия в модальном окне*/ 
+.menu__toggle-close {
+	position: absolute;
+	top: 0;
+	left: 90%;
+}
+
+.header__label-nav {
+	display: flex;
+	
+
+	
+}
+
+.header__label-link {
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22px;
+letter-spacing: 0.02em;
+text-decoration: none;
+
+color: #2196F3;
+}
+
+.header__label-nav li {
+	border-right: 1px solid rgba(33, 33, 33, 0.2);
+	padding: 0 10px;
+}
+
+.header__label-nav li:first-child{
+	padding-left: 0;
+}
+
+.header__label-nav li:last-child{
+	border-right: 0;
+	padding-right: 0;
 }

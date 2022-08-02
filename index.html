@@ -25,53 +25,15 @@
 
 		<div class=" container header__inner">
 			<a href="./index.html" class="logo">Web<span class="logo-accent">Studio</span></a>
-			<nav class="header__nav">
-				<button type="button" class="menu__button is-open" aria-expanded="false" data-menu-button>
-					<svg width="40" height="40" aria-label="Переключатель моюильного меню">
-						<use class="icon__menu" href="./images/sprite-icons.svg#icon-menu_mob"></use>
-						<use class="icon__cross" href="./images/sprite-icons.svg#icon-close_mob"></use>
-					</svg>
-				</button>
-
-				<div class="menu__container" id="menu__container" data-menu>
-					<ul class="header__site-nav">
-						<li class="header__item"><a href="./index.html" class=" header__link header__link--current">Студия</a>
-						</li>
-						<li class="header__item"><a href="./portfolio.html" class="header__link">Портфолио</a></li>
-						<li class="header__item"><a href="#" class="header__link">Контакты</a></li>
-					</ul>
-
-					<ul class="header__auth-nav">
-						<li class="header__list icon-list">
-							<a href="mailto:info@devstudio.com" class="current header__auth-icon">
-								<svg class="icon-link" width="16" height="12" aria-hidden="true">
-									<use href="./images/sprite-icons.svg#icon-emailsvg"></use>
-								</svg>
-								info@devstudio.com
-							</a>
-						</li>
-						<li class="header__list icon-list">
-							<a href="tel:+380961111111" class="header__auth-icon">
-								<svg class="icon-link" width="10" height="16" aria-hidden="true">
-									<use href="./images/sprite-icons.svg#icon-smartphonesvg"></use>
-								</svg>
-								+38 096 111 11 11
-							</a>
-						</li>
-					</ul>
-
-				</div>
-				<!-- левая часть меню -->
-				<!-- <ul class="header__site-nav">
+			<nav class="menu">
+				<ul class="header__site-nav">
 					<li class="header__item"><a href="./index.html" class=" header__link header__link--current">Студия</a>
 					</li>
 					<li class="header__item"><a href="./portfolio.html" class="header__link">Портфолио</a></li>
 					<li class="header__item"><a href="#" class="header__link">Контакты</a></li>
-				</ul> -->
+				</ul>
 
-
-				<!-- правая часть контакты -->
-				<!-- <ul class="header__auth-nav">
+				<ul class="header__auth-nav">
 					<li class="header__list icon-list">
 						<a href="mailto:info@devstudio.com" class="current header__auth-icon">
 							<svg class="icon-link" width="16" height="12" aria-hidden="true">
@@ -88,8 +50,58 @@
 							+38 096 111 11 11
 						</a>
 					</li>
-				</ul> -->
+				</ul>
 			</nav>
+			<button class="menu__toggle-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+				<svg width="40" height="40" class="menu__toggle-icon">
+					<use href="./images/sprite-icons.svg#icon-menu_mob"></use>
+				</svg>
+			</button>
+			<nav class="menu__container js-menu-container" id="mobile-menu">
+				<button class="menu__toggle-close js-close-menu">
+					<svg width="40" height="40" class="menu__toggle-icon">
+						<use href="./images/sprite-icons.svg#icon-close_mob"></use>
+					</svg>
+				</button>
+				<ul class="header__site-nav">
+					<li class="header__item"><a href="./index.html" class=" header__link header__link--current">Студия</a>
+					</li>
+					<li class="header__item"><a href="./portfolio.html" class="header__link">Портфолио</a></li>
+					<li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+				</ul>
+
+				<ul class="header__auth-nav">
+					<li class="header__list icon-list">
+						<a href="mailto:info@devstudio.com" class="current header__auth-icon">
+							<svg class="icon-link" width="16" height="12" aria-hidden="true">
+								<use href="./images/sprite-icons.svg#icon-emailsvg"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li class="header__list icon-list">
+						<a href="tel:+380961111111" class="header__auth-icon active__tel">
+							<svg class="icon-link" width="10" height="16" aria-hidden="true">
+								<use href="./images/sprite-icons.svg#icon-smartphonesvg"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
+					</li>
+				</ul>
+
+				<ul class="header__label-nav">
+					<li class="header__label-item"><a href="#" class="header__label-link">Instagram</a></li>
+					<li class="header__label-item"><a href="#" class="header__label-link">Twitter</a></li>
+					<li class="header__label-item"><a href="#" class="header__label-link">Facebook</a></li>
+					<li class="header__label-item"><a href="#" class="header__label-link">LinkedIn</a></li>
+				</ul>
+			</nav>
+
+
+
+
+
+
 		</div>
 	</header>
 
@@ -532,7 +544,8 @@
 					<label class="check">
 						<input class="check__input visually-hidden" type="checkbox" name="checkbox">
 						<span class="check__box"></span>
-						<span>Соглашаюсь с рассылкой и принимаю<a href="#" class="check__link">Условия договора</a></span>
+						<span class="chek__desc">
+							Соглашаюсь с рассылкой и принимаю<a href="#" class="check__link">Условия договора</a></span>
 					</label>
 
 					<button type="submit" class="button ">Отправить</button>

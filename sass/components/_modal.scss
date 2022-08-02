@@ -26,8 +26,9 @@
 	pointer-events: none;
 }
 
+
 /* позиционируем модальное окно по центру backdrop */
-.modal {
+	.modal {
 	// position: absolute;
 	// top: 50%;
 	// left: 50%;
@@ -112,7 +113,12 @@
 	font-size: 12px;
 	line-height: 1.16;
 	letter-spacing: 0.01em;
-	margin-bottom: 4px
+	margin-bottom: 4px;
+
+}
+
+.form__field-modal:focus-within{
+	color: var(--accent-color);
 }
 
 .form__field-modal {
