@@ -7,11 +7,12 @@
 
 	
 		
-	// & .header__list:not(:last-child) {
-	// margin-right: 50px;
-
 	
-// }
+@media screen and(min-width:768px) {
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 65px;
+}
 
 
 	& .active__tel {
@@ -34,44 +35,96 @@
 		margin-bottom: 64px;
 
 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		@media screen and(min-width: 768px) {
+			font-size: 12px;
+			margin-bottom: 10px;
+
+		}
+		@media screen and(min-width: 1200px) {
+			font-size: 14px;
+			margin-bottom: 0;
+			
+
+		}
+
 	}
 }
 
-
-// .header__auth-icon {
-// 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and(min-width:768px) {
+	.header__auth-icon {
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	
-// 	&:hover,
-// 	&:focus{
-// 	color: var(--accent-color);
-// }
+	&:hover,
+	&:focus{
+	color: var(--accent-color);
+}
 
-// 	&:hover .icon-link,
-// 	&:focus .icon-link {
-// 	fill: var(--accent-color);
-// }
-// }
-
-
-// .icon-link {
-// 	fill: var(--primary-text-color);
-// 	margin-right: 10px;
+	&:hover .icon-link,
+	&:focus .icon-link {
+	fill: var(--accent-color);
+}
+}
+}
+.header__auth-icon {
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	
-// 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
+	&:hover,
+	&:focus{
+	color: var(--accent-color);
+}
 
-// .icon-list {
-// 	margin-bottom: 10px;
-// }
+	&:hover .icon-link,
+	&:focus .icon-link {
+	fill: var(--accent-color);
+}
+}
 
+@media screen and(min-width: 768px) {
+	
+}
+
+.icon-link {
+	fill: var(--primary-text-color);
+	margin-right: 10px;
+	
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and(max-width: 767px) {
+	.icon-list {
+	margin-bottom: 10px;
+}
+}
+
+
+@media screen and(min-width: 1200px) {
+	.header__list {
+		display: flex;
+		justify-content: center;
+
+		margin-right: 30px;
+	}
+}
 
 .icon-link {
 	display: none;
+
+	@media screen and(min-width: 768px) {
+		display: block;
+	}
 }
+
 @media screen and(min-width: 1200px) {
 	.header__auth-nav {
 	margin-left: 305px;
 	flex-direction: row;
+	justify-content: center;
 	}
 }
 	
+@media screen and(min-width:768px) {
+	.header__list:last-child a{
+		margin-bottom: 0;
+	}
+}
