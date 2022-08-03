@@ -418,62 +418,70 @@
 	<!-- section footer -->
 	<footer class="footer">
 		<div class="container footer__inner">
-			<div class="footer__adress">
-				<a href="./index.html" class="logo">Web<span class="accentes">Studio</span></a>
+			<div class="footer__media">
+				<div class="footer__adress">
+					<a href="./index.html" class="logo">Web<span class="accentes">Studio</span></a>
 
-				<address class="adress">
-					<ul class="adress__list">
-						<li class="adress__item">
-							<a href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank" rel="noopener nofollow noreferrer"
-								class="current">
-								г. Киев, пр-т Леси Украинки, 26
+					<address class="adress">
+						<ul class="adress__list">
+							<li class="adress__item">
+								<a href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank"
+									rel="noopener nofollow noreferrer" class="current">
+									г. Киев, пр-т Леси Украинки, 26
+								</a>
+							</li>
+							<li class="adress__item"><a href="mailto:info@example.com"
+									class="adress__link">info@example.com</a>
+							</li>
+							<li class="adress__item"><a href="tel:+380991111111" class="adress__link">+38 099 111 11 11</a>
+							</li>
+						</ul>
+					</address>
+				</div>
+
+				<div class="social">
+					<p class="social__text">присоединяйтесь</p>
+					<ul class="social__list">
+						<li class="social__item">
+							<a class="social__link" href="#">
+								<svg class="social__icon" width="20" height="20" aria-label="Посилання на Instagram">
+									<use href="./images/sprite-icons.svg#icon-instagram"></use>
+								</svg>
 							</a>
 						</li>
-						<li class="adress__item"><a href="mailto:info@example.com" class="adress__link">info@example.com</a>
+						<li class="social__item">
+							<a class="social__link" href="#">
+								<svg class="social__icon" width="20" height="20" aria-label="Посилання на Twitter">
+									<use href="./images/sprite-icons.svg#icon-twitter"></use>
+								</svg>
+							</a>
 						</li>
-						<li class="adress__item"><a href="tel:+380991111111" class="adress__link">+38 099 111 11 11</a></li>
+						<li class="social__item">
+							<a class="social__link" href="#">
+								<svg class="social__icon" width="20" height="20" aria-label="Посилання на Facebook">
+									<use href="./images/sprite-icons.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="#">
+								<svg class="social__icon" width="20" height="20" aria-label="Посилання на In">
+									<use href="./images/sprite-icons.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</li>
 					</ul>
-				</address>
-			</div>
-
-			<div class="social">
-				<p class="social__text">присоединяйтесь</p>
-				<ul class="social__list">
-					<li class="social__item">
-						<a class="social__link" href="#">
-							<svg class="social__icon" width="20" height="20" aria-label="Посилання на Instagram">
-								<use href="./images/sprite-icons.svg#icon-instagram"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link" href="#">
-							<svg class="social__icon" width="20" height="20" aria-label="Посилання на Twitter">
-								<use href="./images/sprite-icons.svg#icon-twitter"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link" href="#">
-							<svg class="social__icon" width="20" height="20" aria-label="Посилання на Facebook">
-								<use href="./images/sprite-icons.svg#icon-facebook"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link" href="#">
-							<svg class="social__icon" width="20" height="20" aria-label="Посилання на In">
-								<use href="./images/sprite-icons.svg#icon-linkedin"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
+				</div>
 			</div>
 
 			<form class="form-email" name="email" autocomplete="on">
 				<div class="form-field">
-					<label class=" form__label" for="user-email">Подпишитесь на рассылку</label>
-					<input class="form__input" type="email" name="email" id="user-email" placeholder="E-mail">
+					<div class="form__user">
+						<label class=" form__label" for="user-email">Подпишитесь на рассылку</label>
+						<input class="form__input" type="email" name="email" id="user-email" placeholder="E-mail">
+					</div>
+
+
 
 					<button class="button form__button" type="submit">Подписаться
 						<svg class="form__icon" width="24" height="24">
@@ -482,11 +490,7 @@
 					</button>
 				</div>
 
-				<!-- <button class="button form__button" type="submit">Подписаться
-					<svg class="form__icon" width="24" height="24">
-						<use href="./images/sprite-icons.svg#icon-icon-send-1"></use>
-					</svg>
-				</button> -->
+
 
 			</form>
 

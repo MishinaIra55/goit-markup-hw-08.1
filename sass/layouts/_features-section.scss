@@ -67,13 +67,14 @@
 	height: 120px;
 }
 
-.feature__description {
+.features__item {
 	margin-bottom: 30px;
+}
 
-	&:last-child {
+.features__item:last-child {
 	margin-bottom: 0;
 	}
-}
+
 
 
 

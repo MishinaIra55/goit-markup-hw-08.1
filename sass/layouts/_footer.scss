@@ -5,29 +5,42 @@
 	padding-bottom: 60px;
 
 	&__inner {
-	// display: flex;
-
-	// align-items: baseline;
-	text-align: center;
+		text-align: center;
+}
 }
 
-
+@media screen and(max-width: 767px) {
+	.footer__adress,
+	.social {
+	margin-bottom: 60px;
+}
 }
 
 @media screen and(min-width: 768px) {
-	.footer__inner {
-		display: flex;
-		flex-wrap: wrap;
+	 .footer__inner {
+	 	display: flex;
+	 	flex-wrap: wrap;
 		justify-content: center;
-		gap: 165px;
-		align-items: baseline;
-	}
-
-	.foor__adress{
-		display: flex;
-    flex-direction: column;
+		gap: 60px;
+	 
+@media screen and(min-width: 1200px){
+		flex-wrap: nowrap;
+		
 	}
 }
+}
+	@media screen and(min-width: 768px){
+	.footer__media{
+		display: flex;
+		align-items: baseline;
+		gap: 165px;
+
+		@media screen and(min-width: 1200px){
+		gap: 75px;
+	}
+	}
+}
+
 
 .adress__list a {
 	text-decoration: none;
@@ -70,9 +83,9 @@
 /*footer social icon*/
 
 .social {
-	// display: flex;
-	// flex-direction: column;
-	// margin-left: 70px;
+	display: flex;
+	flex-direction: column;
+	
 
 	&__item {
 	margin-right: 10px;
@@ -87,11 +100,7 @@
 
 	margin-bottom: 20px;
 }
-@media screen and(min-width: 768px) {
-	display: flex;
-	flex-direction: column;
-	// margin-left: 70px;
-}
+
 }
 
 .social__icon {
@@ -131,23 +140,29 @@
 }
 
 /* стили формы в футере*/
-
+@media screen and(min-width: 1200px){
 .form-email {
 	display: flex;
-	// align-items: flex-end;
-	// margin-left: auto;
+	align-items: center;
 }
 
+}
 .form-field {
-	display: flex;
-	flex-direction: column;
+		display: flex;
+		flex-direction: column;
 	
-	// margin-right: 12px
+@media screen and(min-width: 1200px){
+	.form-field {
+		
+		flex-direction: row;
+		align-items: flex-end;
+	}
+}
 }
 .form__label {
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 
@@ -170,6 +185,10 @@
 	color: var(--primary-white-color);
 
 	padding-left: 15px;
+
+	@media screen and(min-width: 1200px) {
+		width: 358px;
+	}
 }
 
 .form__input::placeholder {
@@ -185,5 +204,18 @@
 	top: 50%;
 	right:28px;
 	transform: translateY(-50%);
+}
+
+
+.form__user {
+	display: flex;
+	flex-direction: column;
+	@media screen and(min-width: 1200px){
+		margin-right: 12px;
+	}
+
+	
+   //  align-items: baseline;
+   //  align-items: flex-start;
 }
 
