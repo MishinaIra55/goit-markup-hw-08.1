@@ -808,6 +808,11 @@ body.modal-open {
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg.jpg.jpg");
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg@2x.jpg.jpg");
+  }
+}
 .hero__title {
   font-weight: 900;
   font-size: 26px;
@@ -1236,7 +1241,7 @@ body.modal-open {
   flex-direction: column;
 }
 @media screen and (min-width: 1200px) {
-  .form-field .form-field {
+  .form-field {
     flex-direction: row;
     align-items: flex-end;
   }

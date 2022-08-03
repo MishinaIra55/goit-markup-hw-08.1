@@ -152,13 +152,12 @@
 		flex-direction: column;
 	
 @media screen and(min-width: 1200px){
-	.form-field {
-		
 		flex-direction: row;
 		align-items: flex-end;
 	}
+
 }
-}
+
 .form__label {
 	font-weight: 700;
 	font-size: 14px;
