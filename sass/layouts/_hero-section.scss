@@ -1,53 +1,59 @@
-// .hero {
-// 	background-color: #2f303a;
-// 	text-align: center;
-
-// 	padding: 200px 0;
-
-// 	max-width: 1600px;
-// 	height: 600px;
-// 	margin-left: auto;
-// 	margin-right: auto;
-// 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg.jpg.jpg");
-
-// 	&__title {
-// 	font-weight: 900;
-// 	font-size: 44px;
-// 	line-height: 1.36;
-// 	text-align: center;
-// 	letter-spacing: 0.06em;
-// 	text-transform: uppercase;
-// 	color: var(--primary-white-color);
-
-// 	width: 696px;
-// 	margin-left: 452px;
-
-// 	margin-bottom: 30px;
-// }
-
-// }
-
 .hero {
 	background-color: #2f303a;
 	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
 
 	padding: 120px 0;
 
-	max-width: 1600px;
-	height: 400px;
+	// max-width: 1600px;
+	// height: 400px;
 	margin-left: auto;
 	margin-right: auto;
 	background-image: 
 	linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-	url("../images/bg.jpg.jpg");
+	url("../../images/mobile/Header img.jpg");
+	// background-size: 1600px 400px;
+
 
 	@media (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
 			(min-resolution: 2dppx),
 			(min-resolution: 192dpi) {
-	background-image: 
+		background-image: 
 				linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-				url("../images/bg@2x.jpg.jpg");
+				url("../../images/mobile/Header img@2x.jpg");
 	}
+
+	@media (min-width: 768px) {
+		
+		background-image: 
+			linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+			url("../../images/tablet/Header img.jpg");
+	}
+	@media (min-resolution: 2dppx) {
+		background-image: 
+			linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+			url("../../images/tablet/Header img@2x.jpg");
+	}
+	
+	
+	@media (min-width: 1200px) {
+		
+		background-image: 
+			linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+			url("../../images/desctop/Header img.jpg");
+	}
+	@media (min-resolution: 2dppx) {
+		background-image: 
+			linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+			url("../../images/desctop/Header img@2x.jpg");
+	}
+	
+
+
+
 
 	&__title {
 	font-weight: 900;
