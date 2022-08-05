@@ -22,31 +22,18 @@
 /* скрываем модальное окно */
 .backdrop.is-hidden {
 	opacity: 0;
-	/* visibility: hidden; */
 	pointer-events: none;
 }
 
 
 /* позиционируем модальное окно по центру backdrop */
 	.modal {
-	// position: absolute;
-	// top: 50%;
-	// left: 50%;
-	// transform: translate(-50%, -50%);
+		position: relative;
+		padding: 40px;
 
-	// width: 450px;
-	// max-height: 609px;
-	// height: 100%;
-
-	// width: 528px;
-	// max-height: 581px;
-	// height: 100%;
-	position: relative;
-	padding: 40px;
-
-	background-color: var(--primary-white-color);
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-	border-radius: 4px;	
+		background-color: var(--primary-white-color);
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+		border-radius: 4px;	
 
 	// transform: translate(-50%, -50%) scale(1);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -68,33 +55,21 @@
 		max-height: 581px;
 	}
 	&__button-close {
-	position: absolute;
-	top: 8px;
-   right: 8px;
-	cursor: pointer;
+		position: absolute;
+		top: 8px;
+   	right: 8px;
+		cursor: pointer;
 
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	background-color: var(--primary-white-color);
-	
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		background-color: var(--primary-white-color);
 }
 	&__icon-close {
 	fill:#000;
 }
-}
-
-
-
-
-
-/* Стилизируем форму модального окна */
-
-
-// .modal__form-conect {
-// 	padding: 40px;
-// }
+ }
 
 .form__modal-name {
 	display: block;
@@ -117,9 +92,12 @@
 
 }
 
-.form__field-modal:focus-within{
-	color: var(--accent-color);
+@media  screen and (max-width: 767px) {
+	.form__field-modal:focus-within{
+		color: var(--accent-color);
 }
+}
+
 
 .form__field-modal {
 	display: flex;
@@ -153,12 +131,6 @@
 }
 }
 
-/* меняем border при фокусе */
-
-
-/*  меняем иконку цвет при focuse */
-
-
 .icon__modal {
 	position: absolute;
 	top: 65%;
@@ -174,11 +146,9 @@
 }
 
 }
-
-
 .modal__icon-close:focus,
 .modal__icon-close:hover {
- fill: var(--accent-color);
+ 	fill: var(--accent-color);
 }
 
 .modal__form-input-textarea {

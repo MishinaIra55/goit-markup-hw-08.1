@@ -1,8 +1,6 @@
 .header__site-nav {
 	margin-bottom: 302px;
 	
-	
-
 	& a:hover,
 	& a:focus {
 	color: var(--accent-color);
@@ -17,16 +15,14 @@
 @media screen and(min-width: 768px) {
 	 display: flex;
 	 margin-bottom: 0;
+	}
 }
-}
-
 
 .header__link {
 	display: block;
 	
 	padding-bottom: 32px;
-
-
+	
 	font-weight: 500;
 	font-size: 40px;
 	line-height: 1.17;
@@ -59,12 +55,10 @@
 	@include line-after;
 }
 	}
-
 }
 
 @media screen and(min-width:768px) {
- 
-	.header__item{
+ .header__item{
 	display: flex;
 
 	position: relative;

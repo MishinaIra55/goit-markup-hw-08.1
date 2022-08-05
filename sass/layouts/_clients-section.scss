@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 .client__list {
 	display: flex;
 	flex-wrap: wrap;
@@ -12,8 +5,7 @@
 
 	@media screen and(min-width: 320px) {
 		justify-content: center;
-}
-	
+	}
 }
 
 .clients__item {
@@ -45,7 +37,7 @@
 .clients__link:hover &,
 .clients__link:focus & {
 	fill: var(--accent-color);
-}
+	}
 }
 
 .clients__link {
