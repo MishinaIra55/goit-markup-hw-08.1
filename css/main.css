@@ -270,7 +270,7 @@ body.modal-open {
 }
 
 .chek__desc {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .header-line {
@@ -551,6 +551,11 @@ body.modal-open {
   text-decoration: none;
   color: #2196F3;
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .header__label-link {
+    font-size: 12px;
+  }
+}
 
 .header__label-nav li {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -648,6 +653,11 @@ body.modal-open {
   font-size: 34px;
   color: var(--accent-color);
   margin-bottom: 32px;
+}
+@media screen and (min-width: 320px) and (max-width: 467px) {
+  .header__auth-nav .active__tel {
+    font-size: 25px;
+  }
 }
 .header__auth-nav a {
   font-weight: 500;

@@ -12,6 +12,10 @@
 	font-size: 34px;
 	color: var(--accent-color);
 	margin-bottom: 32px;
+
+	@media screen and(min-width: 320px) and (max-width: 467px){
+		font-size: 25px;
+	}
 }
 
 & a {
