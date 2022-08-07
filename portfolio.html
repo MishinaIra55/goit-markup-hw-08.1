@@ -65,9 +65,9 @@
 			<a href="./index.html" class="logo">Web<span class="logo-accent">Studio</span></a>
 			<nav class="menu">
 				<ul class="header__site-nav">
-					<li class="header__item"><a href="./index.html" class=" header__link header__link--current">Студия</a>
+					<li class="header__item"><a href="./index.html" class=" header__link ">Студия</a>
 					</li>
-					<li class="header__item"><a href="./portfolio.html" class="header__link">Портфолио</a></li>
+					<li class="header__item"><a href="./portfolio.html" class="header__link header__link--current">Портфолио</a></li>
 					<li class="header__item"><a href="#" class="header__link">Контакты</a></li>
 				</ul>
 
@@ -102,7 +102,7 @@
 					</svg>
 				</button>
 				<ul class="header__site-nav">
-					<li class="header__item"><a href="./index.html" class=" header__link header__link--current">Студия</a>
+					<li class="header__item"><a href="./index.html" class=" header__link">Студия</a>
 					</li>
 					<li class="header__item"><a href="./portfolio.html" class="header__link">Портфолио</a></li>
 					<li class="header__item"><a href="#" class="header__link">Контакты</a></li>
@@ -134,12 +134,6 @@
 					<li class="header__label-item"><a href="#" class="header__label-link">LinkedIn</a></li>
 				</ul>
 			</nav>
-
-
-
-
-
-
 		</div>
 	</header>
 
@@ -160,14 +154,16 @@
 					<li class="portfolio__elements">
 						<a href="#" class="portfolio__cards-menu">
 							<div class="portfolio__foto-overlay">
-								<img srcset="./images/mobile/portfolio/texno.jpg 450w,
-												./images/mobile/portfolio/texno@2x.jpg 450w,
-												./images/tablet/portfolio/texno.jpg 354w,
-												./images/tablet/portfolio/texno@2x.jpg 354w,
-												./images/desctop/portfolio/texno.jpg 270w,
-												./images/desctop/portfolio/texno@2x.jpg 270w"
-									sizes="(min-width: 320px) 450px,(min-width: 768px) 354px,(min-width: 1200px) 270px, 100vw"
-									src="./images/desctop/portfolio/texno.jpg 270w" alt="Технокряк" />
+								<picture>
+									<source media="(min-width: 1200px)"
+									srcset="./images/desctop/portfolio/texno.jpg 1x, ./images/desctop/portfolio/texno@2x.jpg  2x">
+									<source media="(min-width: 768px)"
+									srcset="./images/tablet/portfolio/texno.jpg 1x, ./images/tablet/portfolio/texno@2x.jpg 2x">
+									<source media="(max-width: 767px)"
+									srcset="./images/mobile/portfolio/texno.jpg 1x, ./images/mobile/portfolio/texno@2x.jpg 2x">
+									<img  src="./images/desctop/portfolio/texno.jpg" alt="Веб">
+							  </picture>
+								
 
 								<div class="portfolio__cards-overlay">
 									<p class="portfolio__cards-information">
@@ -186,14 +182,16 @@
 					<li class="portfolio__elements">
 						<a href="#" class="portfolio__cards-menu">
 							<div class="portfolio__foto-overlay">
-								<img srcset="./images/mobile/portfolio/design.jpg 450w,
-												./images/mobile/portfolio/design@2x.jpg 450w,
-												./images/tablet/portfolio/design.jpg 354w,
-												./images/tablet/portfolio/design@2x.jpg 354w,
-												./images/desctop/portfolio/design.jpg 270w,
-												./images/desctop/portfolio/design@2x.jpg 270w"
-									sizes="(min-width: 320px) 450px,(min-width: 768px) 354px,(min-width: 1200px) 270px, 100vw"
-									src="./images/desctop/portfolio/design.jpg 270w" alt="Дизайн" />
+								<picture>
+									<source media="(min-width: 1200px)"
+									srcset="./images/desctop/portfolio/design.jpg 1x, ./images/desctop/portfolio/design@2x.jpg  2x">
+									<source media="(min-width: 768px)"
+									srcset="./images/tablet/portfolio/design.jpg 1x, ./images/tablet/portfolio/design@2x.jpg 2x">
+									<source media="(max-width: 767px)"
+									srcset="./images/mobile/portfolio/design.jpg 1x, ./images/mobile/portfolio/design@2x.jpg 2x">
+									<img  src="./images/desctop/portfolio/design.jpg" alt="Дизайн">
+							  </picture>
+								
 								<div class="portfolio__cards-overlay">
 									<p class="portfolio__cards-information">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -211,14 +209,16 @@
 					<li class="portfolio__elements">
 						<a href="#" class="portfolio__cards-menu">
 							<div class="portfolio__foto-overlay">
-								<img srcset="./images/mobile/portfolio/application.jpg 450w,
-												./images/mobile/portfolio/application@2x.jpg 450w,
-												./images/tablet/portfolio/application.jpg 354w,
-												./images/tablet/portfolio/application@2x.jpg 354w,
-												./images/desctop/portfolio/application.jpg 270w,
-												./images/desctop/portfolio/application@2x.jpg 270w"
-									sizes="(min-width: 320px) 450px,(min-width: 768px) 354px,(min-width: 1200px) 270px, 100vw"
-									src="./images/desctop/portfolio/application.jpg 270w" alt="Приложение" />
+								<picture>
+									<source media="(min-width: 1200px)"
+									srcset="./images/desctop/portfolio/application.jpg 1x, ./images/desctop/portfolio/application@2x.jpg  2x">
+									<source media="(min-width: 768px)"
+									srcset="./images/tablet/portfolio/application.jpg 1x, ./images/tablet/portfolio/application@2x.jpg 2x">
+									<source media="(max-width: 767px)"
+									srcset="./images/mobile/portfolio/application.jpg 1x, ./images/mobile/portfolio/application@2x.jpg 2x">
+									<img  src="./images/desctop/portfolio/application.jpg" alt="Приложение">
+							  </picture>
+								
 
 								<div class="portfolio__cards-overlay">
 									<p class="portfolio__cards-information">
@@ -237,14 +237,16 @@
 					<li class="portfolio__elements">
 						<a href="#" class="portfolio__cards-menu">
 							<div class="portfolio__foto-overlay">
-								<img srcset="./images/mobile/portfolio/headphones.jpg 450w,
-												./images/mobile/portfolio/headphones@2x.jpg 450w,
-												./images/tablet/portfolio/headphones.jpg 354w,
-												./images/tablet/portfolio/headphones@2x.jpg 354w,
-												./images/desctop/portfolio/headphones.jpg 270w,
-												./images/desctop/portfolio/headphones@2x.jpg 270w"
-									sizes="(min-width: 320px) 450px,(min-width: 768px) 354px,(min-width: 1200px) 270px, 100vw"
-									src="./images/desctop/portfolio/headphones.jpg 270w" alt="Маркетинг" />
+								<picture>
+									<source media="(min-width: 1200px)"
+									srcset="./images/desctop/portfolio/headphones.jpg 1x, ./images/desctop/portfolio/headphones@2x.jpg  2x">
+									<source media="(min-width: 768px)"
+									srcset="./images/tablet/portfolio/headphones.jpg 1x, ./images/tablet/portfolio/headphones@2x.jpg 2x">
+									<source media="(max-width: 767px)"
+									srcset="./images/mobile/portfolio/headphones.jpg 1x, ./images/mobile/portfolio/headphones@2x.jpg 2x">
+									<img  src="./images/desctop/portfolio/headphones.jpg" alt="Маркетинг">
+							  </picture>
+								
 
 								<div class="portfolio__cards-overlay">
 									<p class="portfolio__cards-information">
@@ -263,14 +265,16 @@
 					<li class="portfolio__elements">
 						<a href="#" class="portfolio__cards-menu">
 							<div class="portfolio__foto-overlay">
-								<img srcset="./images/mobile/portfolio/box.jpg 450w,
-												./images/mobile/portfolio/box@2x.jpg 450w,
-												./images/tablet/portfolio/box.jpg 354w,
-												./images/tablet/portfolio/box@2x.jpg 354w,
-												./images/desctop/portfolio/box.jpg 270w,
-												./images/desctop/portfolio/box@2x.jpg 270w"
-									sizes="(min-width: 320px) 450px,(min-width: 768px) 354px,(min-width: 1200px) 270px, 100vw"
-									src="./images/desctop/portfolio/box.jpg 270w" alt="Приложение" />
+								<picture>
+									<source media="(min-width: 1200px)"
+									srcset="./images/desctop/portfolio/box.jpg 1x, ./images/desctop/portfolio/box@2x.jpg  2x">
+									<source media="(min-width: 768px)"
+									srcset="./images/tablet/portfolio/box.jpg 1x, ./images/tablet/portfolio/box@2x.jpg 2x">
+									<source media="(max-width: 767px)"
+									srcset="./images/mobile/portfolio/box.jpg 1x, ./images/mobile/portfolio/box@2x.jpg 2x">
+									<img  src="./images/desctop/portfolio/box.jpg" alt="Приложение">
+							  </picture>
+								
 
 								<div class="portfolio__cards-overlay">
 									<p class="portfolio__cards-information">
@@ -289,14 +293,16 @@
 					<li class="portfolio__elements">
 						<a href="#" class="portfolio__cards-menu">
 							<div class="portfolio__foto-overlay">
-								<img srcset="./images/mobile/portfolio/missi.jpg 450w,
-													./images/mobile/portfolio/missi@2x.jpg 450w,
-													./images/tablet/portfolio/missi.jpg 354w,
-													./images/tablet/portfolio/missi@2x.jpg 354w,
-													./images/desctop/portfolio/missi.jpg 270w,
-													./images/desctop/portfolio/missi@2x.jpg 270w"
-									sizes="(min-width: 320px) 450px,(min-width: 768px) 354px,(min-width: 1200px) 270px, 100vw"
-									src="./images/desctop/portfolio/missi.jpg 270w" alt="Дизайн" />
+								<picture>
+									<source media="(min-width: 1200px)"
+									srcset="./images/desctop/portfolio/missi.jpg 1x, ./images/desctop/portfolio/missi@2x.jpg  2x">
+									<source media="(min-width: 768px)"
+									srcset="./images/tablet/portfolio/missi.jpg 1x, ./images/tablet/portfolio/missi@2x.jpg 2x">
+									<source media="(max-width: 767px)"
+									srcset="./images/mobile/portfolio/missi.jpg 1x, ./images/mobile/portfolio/missi@2x.jpg 2x">
+									<img  src="./images/desctop/portfolio/missi.jpg" alt="Веб-сайт">
+							  </picture>
+								
 
 								<div class="portfolio__cards-overlay">
 									<p class="portfolio__cards-information">
@@ -315,14 +321,16 @@
 					<li class="portfolio__elements">
 						<a href=" #" class="portfolio__cards-menu">
 							<div class="portfolio__foto-overlay">
-								<img srcset="./images/mobile/portfolio/book.jpg 450w,
-												./images/mobile/portfolio/book@2x.jpg 450w,
-												./images/tablet/portfolio/book.jpg 354w,
-												./images/tablet/portfolio/book@2x.jpg 354w,
-												./images/desctop/portfolio/book.jpg 270w,
-												./images/desctop/portfolio/book@2x.jpg 270w"
-									sizes="(min-width: 320px) 450px,(min-width: 768px) 354px,(min-width: 1200px) 270px, 100vw"
-									src="./images/desctop/portfolio/book.jpg 270w" alt="Дизайн" />
+								<picture>
+									<source media="(min-width: 1200px)"
+									srcset="./images/desctop/portfolio/book.jpg 1x, ./images/desctop/portfolio/book@2x.jpg  2x">
+									<source media="(min-width: 768px)"
+									srcset="./images/tablet/portfolio/book.jpg 1x, ./images/tablet/portfolio/book@2x.jpg 2x">
+									<source media="(max-width: 767px)"
+									srcset="./images/mobile/portfolio/book.jpg 1x, ./images/mobile/portfolio/book@2x.jpg 2x">
+									<img  src="./images/desctop/portfolio/book.jpg" alt="Веб-сайт">
+							  </picture>
+								
 								<div class="portfolio__cards-overlay">
 									<p class="portfolio__cards-information">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -339,14 +347,16 @@
 					<li class="portfolio__elements">
 						<a href="#" class="portfolio__cards-menu">
 							<div class="portfolio__foto-overlay">
-								<img srcset="./images/mobile/portfolio/project.jpg 450w,
-												./images/mobile/portfolio/project@2x.jpg 450w,
-												./images/tablet/portfolio/project.jpg 354w,
-												./images/tablet/portfolio/project@2x.jpg 354w,
-												./images/desctop/portfolio/project.jpg 270w,
-												./images/desctop/portfolio/project@2x.jpg 270w"
-									sizes="(min-width: 320px) 450px,(min-width: 768px) 354px,(min-width: 1200px) 270px, 100vw"
-									src="./images/desctop/portfolio/project.jpg 270w" alt="Маркетинг" />
+								<picture>
+									<source media="(min-width: 1200px)"
+									srcset="./images/desctop/portfolio/project.jpg 1x, ./images/desctop/portfolio/project@2x.jpg  2x">
+									<source media="(min-width: 768px)"
+									srcset="./images/tablet/portfolio/project.jpg 1x, ./images/tablet/portfolio/project@2x.jpg 2x">
+									<source media="(max-width: 767px)"
+									srcset="./images/mobile/portfolio/project.jpg 1x, ./images/mobile/portfolio/project@2x.jpg 2x">
+									<img  src="./images/desctop/portfolio/project.jpg" alt="Маркетинг">
+							  </picture>
+								
 
 								<div class="portfolio__cards-overlay">
 									<p class="portfolio__cards-information">
@@ -364,14 +374,16 @@
 					<li class="portfolio__elements">
 						<a href="#" class="portfolio__cards-menu">
 							<div class="portfolio__foto-overlay">
-								<img srcset="./images/mobile/portfolio/growing.jpg 450w,
-												./images/mobile/portfolio/growing@2x.jpg 450w,
-												./images/tablet/portfolio/growing.jpg 354w,
-												./images/tablet/portfolio/growing@2x.jpg 354w,
-												./images/desctop/portfolio/growing.jpg 270w,
-												./images/desctop/portfolio/growing@2x.jpg 270w"
-									sizes="(min-width: 320px) 450px,(min-width: 768px) 354px,(min-width: 1200px) 270px, 100vw"
-									src="./images/desctop/portfolio/growing.jpg 270w" alt="Приложение" />
+								<picture>
+									<source media="(min-width: 1200px)"
+									srcset="./images/desctop/portfolio/growing.jpg 1x, ./images/desctop/portfolio/growing@2x.jpg  2x">
+									<source media="(min-width: 768px)"
+									srcset="./images/tablet/portfolio/growing.jpg 1x, ./images/tablet/portfolio/growing@2x.jpg 2x">
+									<source media="(max-width: 767px)"
+									srcset="./images/mobile/portfolio/growing.jpg 1x, ./images/mobile/portfolio/growing@2x.jpg 2x">
+									<img  src="./images/desctop/portfolio/growing.jpg" alt="Приложение">
+							  </picture>
+								
 
 								<div class="portfolio__cards-overlay">
 									<p class="portfolio__cards-information">

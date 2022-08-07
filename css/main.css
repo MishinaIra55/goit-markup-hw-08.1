@@ -271,6 +271,17 @@ body.modal-open {
 
 .chek__desc {
   font-size: 10px;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .chek__desc {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .chek__desc {
+    font-size: 14px;
+  }
 }
 
 .header-line {
@@ -416,25 +427,8 @@ body.modal-open {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768) {
-  .portfolio__foto-overlay img {
-    width: 354px;
-  }
-}
-
 .portfolio__foto-overlay {
-  width: 450px;
   height: 294px;
-}
-@media screen and (min-width: 768px) {
-  .portfolio__foto-overlay {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .portfolio__foto-overlay {
-    width: 370px;
-  }
 }
 
 .portfolio__cards-overlay {
