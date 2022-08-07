@@ -416,10 +416,6 @@ body.modal-open {
   overflow: hidden;
 }
 
-.portfolio__foto-overlay img {
-  width: 450px;
-  height: 294px;
-}
 @media screen and (min-width: 768) {
   .portfolio__foto-overlay img {
     width: 354px;
@@ -810,31 +806,32 @@ body.modal-open {
   padding: 120px 0;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mobile/Header img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/Header img.jpg");
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mobile/Header img@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/Header img@2x.jpg");
   }
 }
 @media (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/tablet/Header img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/Header img.jpg");
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/tablet/Header img@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/Header img@2x.jpg");
   }
 }
 @media (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/desctop/Header img.jpg");
+    padding: 200px 0;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop/Header img.jpg");
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/desctop/Header img@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop/Header img@2x.jpg");
   }
 }
 .hero__title {
@@ -849,6 +846,18 @@ body.modal-open {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 
 .feature__title {
@@ -1049,14 +1058,11 @@ body.modal-open {
   flex-wrap: wrap;
   gap: 30px;
 }
-@media screen and (min-width: 320px) {
-  .client__list {
-    justify-content: center;
-  }
-}
 
-.clients__item {
-  flex-basis: calc((100% - 30px) / 2);
+@media screen and (min-width: 320px) {
+  .clients__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 @media screen and (min-width: 768px) {
   .clients__item {
@@ -1097,7 +1103,7 @@ body.modal-open {
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .clients__link {
-    width: 280px;
+    width: 130px;
   }
 }
 @media screen and (min-width: 768px) {
